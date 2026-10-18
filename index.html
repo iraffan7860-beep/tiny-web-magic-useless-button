@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4fa">
+  <title>The Useless Button 🐸 | Tiny Web Magic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="floating-decor decor-one">✿</div>
+  <div class="floating-decor decor-two">♡</div>
+  <div class="floating-decor decor-three">✦</div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Tiny Web Magic home">
+      <span class="brand-icon">🐸</span>
+      <span>Tiny Web Magic</span>
+    </a>
+    <button class="sound-toggle" id="soundToggle" type="button">
+      🔊 Sound ON
+    </button>
+  </header>
+
+  <main class="page-container">
+    <section class="hero">
+      <div class="eyebrow">✿ A VERY IMPORTANTLY UNIMPORTANT GAME ✿</div>
+      <h1>The Useless <span>Button</span></h1>
+      <p class="subtitle">
+        One button. Zero purpose. Infinite bad decisions.
+      </p>
+
+      <div class="frog-scene" aria-label="A silly frog">
+        <div class="speech-bubble" id="frogSpeech">
+          Don't you dare. 👀
+        </div>
+        <div class="frog">🐸</div>
+        <div class="frog-caption">sir croaks-a-lot</div>
+      </div>
+
+      <div class="warning">
+        ⚠️ Warning: this button has absolutely no qualifications.
+      </div>
+
+      <div class="button-arena" id="buttonArena">
+        <button class="useless-button" id="uselessButton" type="button">
+          CLICK ME!
+        </button>
+      </div>
+
+      <p class="helper-text" id="helperText">
+        Go on. Press it. I double-dare you.
+      </p>
+      <p class="message" id="message" aria-live="polite">
+        Nothing happened. 😐
+      </p>
+    </section>
+
+    <section class="stats-grid" aria-label="Game statistics">
+      <article class="stat-card">
+        <span class="stat-emoji">👆</span>
+        <p>Button clicks</p>
+        <strong id="clickCount">0</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-emoji">🏆</span>
+        <p>Achievements</p>
+        <strong id="achievementCount">0/5</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-emoji">🤪</span>
+        <p>Chaos level</p>
+        <strong id="chaosLevel">0%</strong>
+      </article>
+    </section>
+
+    <section class="panel achievements-panel">
+      <div class="section-heading">
+        <span class="section-icon">🏆</span>
+        <div>
+          <h2>Your totally unnecessary trophies</h2>
+          <p>Work hard for absolutely nothing.</p>
+        </div>
+      </div>
+      <div class="achievement-list" id="achievementList"></div>
+    </section>
+
+    <section class="panel challenge-panel">
+      <div class="section-heading">
+        <span class="section-icon">🎲</span>
+        <div>
+          <h2>Random nonsense generator</h2>
+          <p>Because clicking the button wasn't enough.</p>
+        </div>
+      </div>
+      <div class="challenge-box">
+        <p id="challengeText">Your mission awaits, brave frog warrior.</p>
+        <button class="secondary-button" id="challengeButton" type="button">
+          Give me a silly mission 🎲
+        </button>
+      </div>
+    </section>
+
+    <section class="chaos-card">
+      <div>
+        <span class="chaos-label">⚡ EXTREMELY UNNECESSARY</span>
+        <h2>Release the chaos!</h2>
+        <p>Activate multiple ridiculous effects at once.</p>
+      </div>
+      <button class="chaos-button" id="chaosButton" type="button">
+        CHAOS MODE 🤯
+      </button>
+    </section>
+
+    <section class="secret-card" id="secretCard" hidden>
+      <div class="secret-icon">👑🐸</div>
+      <p class="eyebrow">THE PROPHECY IS COMPLETE</p>
+      <h2>You actually clicked 100 times?!</h2>
+      <p>
+        Congratulations. You are now the official CEO of Useless Things.
+        Your salary is 100 imaginary frogs.
+      </p>
+      <div class="frog-crown">🐸 👑 🐸</div>
+      <button class="secondary-button" id="secretButton" type="button">
+        Celebrate my terrible achievement 🎉
+      </button>
+    </section>
+
+    <section class="bottom-actions">
+      <button class="reset-button" id="resetButton" type="button">
+        ↻ Reset the nonsense
+      </button>
+      <p>Made with 💗, questionable decisions & Tiny Web Magic.</p>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="error-modal" role="dialog"
+      aria-modal="true" aria-labelledby="errorTitle">
+      <div class="modal-top">
+        <span class="error-icon">🚨</span>
+        <button class="modal-close" id="closeModal" type="button"
+          aria-label="Close popup">✕</button>
+      </div>
+      <p class="eyebrow">VERY OFFICIAL SYSTEM MESSAGE</p>
+      <h2 id="errorTitle">ERROR: TOO MUCH SILLY</h2>
+      <p id="errorText">
+        Your device has detected an unacceptable amount of nonsense.
+      </p>
+      <div class="error-code">ERROR 404: PURPOSE NOT FOUND</div>
+      <button class="primary-button" id="dismissError" type="button">
+        Okay, I'm concerned 😭
+      </button>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>© Tiny Web Magic · Making the internet a little sillier ✿</p>
+  </footer>
+</body>
+</html>
